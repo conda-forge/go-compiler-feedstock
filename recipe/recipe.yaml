@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.26.4"
+  version: "1.26.6"
 
 package:
   name: go-${{ go_variant_str }}-compiler
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://dl.google.com/go/go${{ version }}.src.tar.gz
-  sha256: 4f668a32fbfc1132e6a881fb968c2f1dada631492a339211735fbb255a42602d
+  sha256: a0721c54c688901448d77ad9b3ec7ea7c474730755ff891382e92ecb93ff2cb1
 
 build:
   number: 0
