@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.26.6"
+  version: "1.27.1"
 
 package:
   name: go-${{ go_variant_str }}-compiler
@@ -10,10 +10,10 @@ package:
 source:
   # needed for autotick bot autoupdates
   url: https://dl.google.com/go/go${{ version }}.src.tar.gz
-  sha256: a0721c54c688901448d77ad9b3ec7ea7c474730755ff891382e92ecb93ff2cb1
+  sha256: 4e408abae126d916b6164627193f2c54f0e3ca1312d693b86db45f862ab238b1
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   run:
