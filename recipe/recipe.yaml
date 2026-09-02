@@ -8,11 +8,12 @@ package:
   version: ${{ version }}
 
 source:
+  # needed for autotick bot autoupdates
   url: https://dl.google.com/go/go${{ version }}.src.tar.gz
   sha256: 4e408abae126d916b6164627193f2c54f0e3ca1312d693b86db45f862ab238b1
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   run:
@@ -20,13 +21,13 @@ requirements:
 
 tests:
   - script:
+      # telemetry counter files are written asynchronously into $HOME, which
+      # races with the test directory cleanup
+      - go telemetry off
       - go help
-  - if: unix
-    then:
-      - script: test "$CONDA_GO_COMPILER" = "1"
-  - if: win
-    then:
-      - script: if not "%CONDA_GO_COMPILER%"=="1" exit /b 1
+      - if: unix
+        then: test "$CONDA_GO_COMPILER" = "1"
+        else: if not "%CONDA_GO_COMPILER%"=="1" exit /b 1
 
 about:
   license: BSD-3-Clause
