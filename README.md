@@ -47,6 +47,20 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/go-compiler-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_go_variant_strnocgo" alt="variant">
                 </a>
               </td>
+            </tr><tr>
+              <td>osx_arm64_go_variant_strcgo</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=29073&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/go-compiler-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_go_variant_strcgo" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_go_variant_strnocgo</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=29073&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/go-compiler-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_go_variant_strnocgo" alt="variant">
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
