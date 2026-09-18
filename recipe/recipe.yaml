@@ -13,6 +13,7 @@ source:
   sha256: 4e408abae126d916b6164627193f2c54f0e3ca1312d693b86db45f862ab238b1
 
 build:
+  skip: go_variant_str == "cgo" and target_platform == "win-arm64"
   number: 0
 
 requirements:
